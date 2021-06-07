@@ -1,132 +1,763 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<html dir="ltr" lang="en-US">
 
-        <title>Hydra Spa</title>
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<head>
+	<title>Hydra Spa</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<meta name="author" content="SemiColonWeb" />
 
-        <!-- Styles -->
-        <style>
-            /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}a{background-color:transparent}[hidden]{display:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #e2e8f0}a{color:inherit;text-decoration:inherit}svg,video{display:block;vertical-align:middle}video{max-width:100%;height:auto}.bg-white{--bg-opacity:1;background-color:#fff;background-color:rgba(255,255,255,var(--bg-opacity))}.bg-gray-100{--bg-opacity:1;background-color:#f7fafc;background-color:rgba(247,250,252,var(--bg-opacity))}.border-gray-200{--border-opacity:1;border-color:#edf2f7;border-color:rgba(237,242,247,var(--border-opacity))}.border-t{border-top-width:1px}.flex{display:flex}.grid{display:grid}.hidden{display:none}.items-center{align-items:center}.justify-center{justify-content:center}.font-semibold{font-weight:600}.h-5{height:1.25rem}.h-8{height:2rem}.h-16{height:4rem}.text-sm{font-size:.875rem}.text-lg{font-size:1.125rem}.leading-7{line-height:1.75rem}.mx-auto{margin-left:auto;margin-right:auto}.ml-1{margin-left:.25rem}.mt-2{margin-top:.5rem}.mr-2{margin-right:.5rem}.ml-2{margin-left:.5rem}.mt-4{margin-top:1rem}.ml-4{margin-left:1rem}.mt-8{margin-top:2rem}.ml-12{margin-left:3rem}.-mt-px{margin-top:-1px}.max-w-6xl{max-width:72rem}.min-h-screen{min-height:100vh}.overflow-hidden{overflow:hidden}.p-6{padding:1.5rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.pt-8{padding-top:2rem}.fixed{position:fixed}.relative{position:relative}.top-0{top:0}.right-0{right:0}.shadow{box-shadow:0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px 0 rgba(0,0,0,.06)}.text-center{text-align:center}.text-gray-200{--text-opacity:1;color:#edf2f7;color:rgba(237,242,247,var(--text-opacity))}.text-gray-300{--text-opacity:1;color:#e2e8f0;color:rgba(226,232,240,var(--text-opacity))}.text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}.text-gray-500{--text-opacity:1;color:#a0aec0;color:rgba(160,174,192,var(--text-opacity))}.text-gray-600{--text-opacity:1;color:#718096;color:rgba(113,128,150,var(--text-opacity))}.text-gray-700{--text-opacity:1;color:#4a5568;color:rgba(74,85,104,var(--text-opacity))}.text-gray-900{--text-opacity:1;color:#1a202c;color:rgba(26,32,44,var(--text-opacity))}.underline{text-decoration:underline}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.w-5{width:1.25rem}.w-8{width:2rem}.w-auto{width:auto}.grid-cols-1{grid-template-columns:repeat(1,minmax(0,1fr))}@media (min-width:640px){.sm\:rounded-lg{border-radius:.5rem}.sm\:block{display:block}.sm\:items-center{align-items:center}.sm\:justify-start{justify-content:flex-start}.sm\:justify-between{justify-content:space-between}.sm\:h-20{height:5rem}.sm\:ml-0{margin-left:0}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:pt-0{padding-top:0}.sm\:text-left{text-align:left}.sm\:text-right{text-align:right}}@media (min-width:768px){.md\:border-t-0{border-top-width:0}.md\:border-l{border-left-width:1px}.md\:grid-cols-2{grid-template-columns:repeat(2,minmax(0,1fr))}}@media (min-width:1024px){.lg\:px-8{padding-left:2rem;padding-right:2rem}}@media (prefers-color-scheme:dark){.dark\:bg-gray-800{--bg-opacity:1;background-color:#2d3748;background-color:rgba(45,55,72,var(--bg-opacity))}.dark\:bg-gray-900{--bg-opacity:1;background-color:#1a202c;background-color:rgba(26,32,44,var(--bg-opacity))}.dark\:border-gray-700{--border-opacity:1;border-color:#4a5568;border-color:rgba(74,85,104,var(--border-opacity))}.dark\:text-white{--text-opacity:1;color:#fff;color:rgba(255,255,255,var(--text-opacity))}.dark\:text-gray-400{--text-opacity:1;color:#cbd5e0;color:rgba(203,213,224,var(--text-opacity))}}
-        </style>
+<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700|Arimo:400,700|Playfair+Display:400,400i,700|Cookie" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
+<link rel="stylesheet" href="style.css" type="text/css" />
+<link rel="stylesheet" href="css/dark.css" type="text/css" />
 
-        <style>
-            body {
-                font-family: 'Nunito';
-            }
-        </style>
-    </head>
-    <body class="antialiased">
-        <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
-            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 underline">Dashboard</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 underline">Login</a>
+<link rel="stylesheet" href="demos/spa/spa.css" type="text/css" />
+<link rel="stylesheet" href="demos/spa/css/fonts/spa-icons.css" type="text/css" />
 
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Register</a>
-                        @endif
-                    @endif
-                </div>
-            @endif
+<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
+<link rel="stylesheet" href="css/animate.css" type="text/css" />
+<link rel="stylesheet" href="css/magnific-popup.css" type="text/css" />
+<link rel="stylesheet" href="demos/spa/css/fonts.css" type="text/css" />
+<link rel="stylesheet" href="css/responsive.css" type="text/css" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="css/colors3dda.css?color=78c9d1" type="text/css" />
 
-            <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
-                    <svg viewBox="0 0 651 192" fill="none" xmlns="http://www.w3.org/2000/svg" class="h-16 w-auto text-gray-700 sm:h-20">
-                        <g clip-path="url(#clip0)" fill="#EF3B2D">
-                            <path d="M248.032 44.676h-16.466v100.23h47.394v-14.748h-30.928V44.676zM337.091 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.431 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162-.001 2.863-.479 5.584-1.432 8.161zM463.954 87.202c-2.101-3.341-5.083-5.965-8.949-7.875-3.865-1.909-7.756-2.864-11.669-2.864-5.062 0-9.69.931-13.89 2.792-4.201 1.861-7.804 4.417-10.811 7.661-3.007 3.246-5.347 6.993-7.016 11.239-1.672 4.249-2.506 8.713-2.506 13.389 0 4.774.834 9.26 2.506 13.459 1.669 4.202 4.009 7.925 7.016 11.169 3.007 3.246 6.609 5.799 10.811 7.66 4.199 1.861 8.828 2.792 13.89 2.792 3.913 0 7.804-.955 11.669-2.863 3.866-1.908 6.849-4.533 8.949-7.875v9.021h15.607V78.182h-15.607v9.02zm-1.432 32.503c-.955 2.578-2.291 4.821-4.009 6.73-1.719 1.91-3.795 3.437-6.229 4.582-2.435 1.146-5.133 1.718-8.091 1.718-2.96 0-5.633-.572-8.019-1.718-2.387-1.146-4.438-2.672-6.156-4.582-1.719-1.909-3.032-4.152-3.938-6.73-.909-2.577-1.36-5.298-1.36-8.161 0-2.864.451-5.585 1.36-8.162.905-2.577 2.219-4.819 3.938-6.729 1.718-1.908 3.77-3.437 6.156-4.582 2.386-1.146 5.059-1.718 8.019-1.718 2.958 0 5.656.572 8.091 1.718 2.434 1.146 4.51 2.674 6.229 4.582 1.718 1.91 3.054 4.152 4.009 6.729.953 2.577 1.432 5.298 1.432 8.162 0 2.863-.479 5.584-1.432 8.161zM650.772 44.676h-15.606v100.23h15.606V44.676zM365.013 144.906h15.607V93.538h26.776V78.182h-42.383v66.724zM542.133 78.182l-19.616 51.096-19.616-51.096h-15.808l25.617 66.724h19.614l25.617-66.724h-15.808zM591.98 76.466c-19.112 0-34.239 15.706-34.239 35.079 0 21.416 14.641 35.079 36.239 35.079 12.088 0 19.806-4.622 29.234-14.688l-10.544-8.158c-.006.008-7.958 10.449-19.832 10.449-13.802 0-19.612-11.127-19.612-16.884h51.777c2.72-22.043-11.772-40.877-33.023-40.877zm-18.713 29.28c.12-1.284 1.917-16.884 18.589-16.884 16.671 0 18.697 15.598 18.813 16.884h-37.402zM184.068 43.892c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002-35.648-20.524a2.971 2.971 0 00-2.964 0l-35.647 20.522-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v38.979l-29.706 17.103V24.493a3 3 0 00-.103-.776c-.024-.088-.073-.165-.104-.25-.058-.157-.108-.316-.191-.46-.056-.097-.137-.176-.203-.265-.087-.117-.161-.242-.265-.345-.085-.086-.194-.148-.29-.223-.109-.085-.206-.182-.327-.252l-.002-.001-.002-.002L40.098 1.396a2.971 2.971 0 00-2.964 0L1.487 21.919l-.002.002-.002.001c-.121.07-.219.167-.327.252-.096.075-.205.138-.29.223-.103.103-.178.228-.265.345-.066.089-.147.169-.203.265-.083.144-.133.304-.191.46-.031.085-.08.162-.104.25-.067.249-.103.51-.103.776v122.09c0 1.063.568 2.044 1.489 2.575l71.293 41.045c.156.089.324.143.49.202.078.028.15.074.23.095a2.98 2.98 0 001.524 0c.069-.018.132-.059.2-.083.176-.061.354-.119.519-.214l71.293-41.045a2.971 2.971 0 001.489-2.575v-38.979l34.158-19.666a2.971 2.971 0 001.489-2.575V44.666a3.075 3.075 0 00-.106-.774zM74.255 143.167l-29.648-16.779 31.136-17.926.001-.001 34.164-19.669 29.674 17.084-21.772 12.428-43.555 24.863zm68.329-76.259v33.841l-12.475-7.182-17.231-9.92V49.806l12.475 7.182 17.231 9.92zm2.97-39.335l29.693 17.095-29.693 17.095-29.693-17.095 29.693-17.095zM54.06 114.089l-12.475 7.182V46.733l17.231-9.92 12.475-7.182v74.537l-17.231 9.921zM38.614 7.398l29.693 17.095-29.693 17.095L8.921 24.493 38.614 7.398zM5.938 29.632l12.475 7.182 17.231 9.92v79.676l.001.005-.001.006c0 .114.032.221.045.333.017.146.021.294.059.434l.002.007c.032.117.094.222.14.334.051.124.088.255.156.371a.036.036 0 00.004.009c.061.105.149.191.222.288.081.105.149.22.244.314l.008.01c.084.083.19.142.284.215.106.083.202.178.32.247l.013.005.011.008 34.139 19.321v34.175L5.939 144.867V29.632h-.001zm136.646 115.235l-65.352 37.625V148.31l48.399-27.628 16.953-9.677v33.862zm35.646-61.22l-29.706 17.102V66.908l17.231-9.92 12.475-7.182v33.841z"/>
-                        </g>
-                    </svg>
-                </div>
+<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/settings.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/layers.css">
+<link rel="stylesheet" type="text/css" href="include/rs-plugin/css/navigation.css">
 
-                <div class="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-                    <div class="grid grid-cols-1 md:grid-cols-2">
-                        <div class="p-6">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel.com/docs" class="underline text-gray-900 dark:text-white">Documentation</a></div>
-                            </div>
 
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel has wonderful, thorough documentation covering every aspect of the framework. Whether you are new to the framework or have previous experience with Laravel, we recommend reading all of the documentation from beginning to end.
-                                </div>
-                            </div>
-                        </div>
+<style>
 
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-t-0 md:border-l">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z"></path><path d="M15 13a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laracasts.com" class="underline text-gray-900 dark:text-white">Laracasts</a></div>
-                            </div>
+		.tp-caption.Fashion-SmallText, .Fashion-SmallText,
+		.tp-caption.Fashion-TextBlock, .Fashion-TextBlock {
+			font-family: 'Lato';
+			color: #FFF;
+		}
 
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laracasts offers thousands of video tutorials on Laravel, PHP, and JavaScript development. Check them out, see for yourself, and massively level up your development skills in the process.
-                                </div>
-                            </div>
-                        </div>
+		.tp-caption.Fashion-BigDisplay, .Fashion-BigDisplay {
+			font-family: 'Cookie';
+			letter-spacing: 1px;
+			font-weight: 700;
+			color: #FFF;
+			text-transform: capitalize;
+		}
 
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M7 8h10M7 12h4m1 8l-4-4H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-3l-4 4z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold"><a href="https://laravel-news.com/" class="underline text-gray-900 dark:text-white">Laravel News</a></div>
-                            </div>
+		.restaurant-reviews .flex-control-nav {
+			top: auto;
+			bottom: 25px;
+		}
+	</style>
+</head>
+<body class="stretched" data-loader-color="#103e4d">
 
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel News is a community driven portal and newsletter aggregating all of the latest and most important news in the Laravel ecosystem, including new package releases and tutorials.
-                                </div>
-                            </div>
-                        </div>
+<div id="wrapper" class="clearfix">
 
-                        <div class="p-6 border-t border-gray-200 dark:border-gray-700 md:border-l">
-                            <div class="flex items-center">
-                                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="w-8 h-8 text-gray-500"><path d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                                <div class="ml-4 text-lg leading-7 font-semibold text-gray-900 dark:text-white">Vibrant Ecosystem</div>
-                            </div>
+<header id="header" class="no-sticky transparent-header dark" data-responsive-class="dark">
+<div id="header-wrap">
+<div class="container clearfix">
+<div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
 
-                            <div class="ml-12">
-                                <div class="mt-2 text-gray-600 dark:text-gray-400 text-sm">
-                                    Laravel's robust library of first-party tools and libraries, such as <a href="https://forge.laravel.com" class="underline">Forge</a>, <a href="https://vapor.laravel.com" class="underline">Vapor</a>, <a href="https://nova.laravel.com" class="underline">Nova</a>, and <a href="https://envoyer.io" class="underline">Envoyer</a> help you take your projects to the next level. Pair them with powerful open source libraries like <a href="https://laravel.com/docs/billing" class="underline">Cashier</a>, <a href="https://laravel.com/docs/dusk" class="underline">Dusk</a>, <a href="https://laravel.com/docs/broadcasting" class="underline">Echo</a>, <a href="https://laravel.com/docs/horizon" class="underline">Horizon</a>, <a href="https://laravel.com/docs/sanctum" class="underline">Sanctum</a>, <a href="https://laravel.com/docs/telescope" class="underline">Telescope</a>, and more.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<div id="logo">
+<a href="index.html" class="standard-logo"><img src="demos/spa/images/logo.png" alt="Canvas Logo"></a>
+<a href="index.html" class="retina-logo"><img src="demos/spa/images/logo.png" alt="Canvas Logo"></a>
+</div>
 
-                <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
-                    <div class="text-center text-sm text-gray-500 sm:text-left">
-                        <div class="flex items-center">
-                            <svg fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" class="-mt-px w-5 h-5 text-gray-400">
-                                <path d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
-                            </svg>
+<nav id="primary-menu" class="not-dark">
+<ul class="one-page-menu" data-easing="easeInOutExpo" data-speed="1250" data-offset="0">
+<li class="current"><a href="#" data-href="#slider"><div>Home</div></a></li>
+<li><a href="#" data-href="#section-about"><div>About</div></a></li>
+<li><a href="#" data-href="#section-price"><div>Price</div></a></li>
+<li><a href="/products" data-href="#"><div>Products</div></a></li>
+<li><a href="#" data-href="#section-contact"><div>Contact</div></a></li>
+<li><a href="/login">Login</a></li>
+<li><a href="/register">Register</a></li>
+</ul>
+</nav>
+</div>
+</div>
+</header>
 
-                            <a href="https://laravel.bigcartel.com" class="ml-1 underline">
-                                Shop
-                            </a>
+<section id="slider" class="slider-element revslider-wrap full-screen clearix">
+<div id="rev_slider_10_1_wrapper" class="rev_slider_wrapper fullscreen-container" data-alias="fashion1" style="background-color:transparent;padding:0px;">
 
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" class="ml-4 -mt-px w-5 h-5 text-gray-400">
-                                <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-                            </svg>
+<div id="rev_slider_10_1" class="rev_slider" style="display:none;" data-version="5.0.7">
+<ul>
 
-                            <a href="https://github.com/sponsors/taylorotwell" class="ml-1 underline">
-                                Sponsor
-                            </a>
-                        </div>
-                    </div>
+<li data-index="rs-36" class="dark" data-transition="fadetoleftfadefromright" data-fstransition="fade" data-slotamount="7" data-easein="Power4.easeInOut" data-easeout="Power4.easeInOut" data-masterspeed="2000" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="Enjoy Nature" data-description="">
 
-                    <div class="ml-4 text-center text-sm text-gray-500 sm:text-right sm:ml-0">
-                        Laravel v{{ Illuminate\Foundation\Application::VERSION }} (PHP v{{ PHP_VERSION }})
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
+<img src="demos/spa/images/slider/1.jpg" style='background-color:#ffffff' alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+<div class="tp-caption tp-shape tp-shapewrapper   tp-resizeme rs-parallaxlevel-0" id="slide-36-layer-4" data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']" data-width="full" data-height="full" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power3.easeInOut;" data-transform_out="opacity:0;s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-start="1000" data-basealign="slide" data-responsive_offset="on" style="z-index: 5; background: rgba(0,0,0,0.2)">
+</div>
+
+<div class="tp-caption -  " id="slide-35-layer-1" data-x="['right','right','right','right']" data-hoffset="['40','40','40','40']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['40','40','40','40']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-style_hover="cursor:pointer;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;" data-start="500" data-splitin="none" data-splitout="none" data-actions='[{"event":"click","action":"jumptoslide","slide":"next","delay":""}]' data-basealign="slide" data-responsive_offset="off" data-responsive="off" style="z-index: 5; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400;padding:3px 8px 3px 8px;border-style:solid;border-width:1px;border-radius:30px 30px 30px 30px;"><i class="icon-angle-down"></i>
+</div>
+
+<div class="tp-caption Fashion-BigDisplay   tp-resizeme" id="slide-36-layer-5" data-x="['center','center','center','center']" data-hoffset="['255','231','211','62']" data-y="['middle','middle','middle','middle']" data-voffset="['-30','-18','-48','-28']" data-fontsize="['80','50','50','56']" data-lineheight="['100','50','50','50']" data-width="['none','265','265','265']" data-height="['none','100','100','100']" data-whitespace="['nowrap','normal','normal','normal']" data-transform_idle="o:1;" data-transform_in="x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="x:[100%];s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500" data-splitin="none" data-splitout="none" data-basealign="slide" data-responsive_offset="on" style="z-index: 9; white-space: nowrap;">Spa Treatment
+</div>
+
+<div class="tp-caption Fashion-TextBlock   tp-resizeme" id="slide-36-layer-6" data-x="['center','center','center','center']" data-hoffset="['189','219','200','39']" data-y="['middle','middle','middle','middle']" data-voffset="['120','130','80','110']" data-fontsize="['20','17','17','17']" data-lineheight="['40','30','30','30']" data-width="219" data-height="161" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="x:[-100%];s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500" data-splitin="none" data-splitout="none" data-basealign="slide" data-responsive_offset="on" style="z-index: 10; min-width: 219px; max-width: 219px; max-width: 161px; max-width: 161px; white-space: normal;"><i class="icon-line-check"></i><br>
+<i class="icon-line-check"></i><br>
+<i class="icon-line-check"></i><br>
+<i class="icon-line-check"></i><br>
+</div>
+
+<div class="tp-caption Fashion-SmallText   tp-resizeme" id="slide-36-layer-7" data-x="['center','center','center','center']" data-hoffset="['105','130','105','-39']" data-y="['middle','middle','middle','middle']" data-voffset="['-85','-85','-110','-95']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500" data-splitin="none" data-splitout="none" data-basealign="slide" data-responsive_offset="on" style="z-index: 11; white-space: nowrap;">UNISEX
+</div>
+
+<div class="tp-caption Fashion-TextBlock   tp-resizeme" id="slide-36-layer-8" data-x="['center','center','center','center']" data-hoffset="['224','254','230','80']" data-y="['middle','middle','middle','middle']" data-voffset="['120','130','79','110']" data-fontsize="['20','17','17','17']" data-lineheight="['40','30','30','30']" data-width="219" data-height="161" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="x:[100%];s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500" data-splitin="none" data-splitout="none" data-basealign="slide" data-responsive_offset="on" style="z-index: 12; min-width: 219px; max-width: 219px; max-width: 161px; max-width: 161px; white-space: normal; font-weight: 600;">Body Scrub<br />
+Body Wrap<br />
+Thai Therapy
+Baliness Massage<br />
+</div>
+</li>
+
+<li data-index="rs-37" data-transition="fadetoleftfadefromright" data-fstransition="fade" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="1500" data-thumb="http://server.local/revslider/wp-content/uploads/" data-rotate="0" data-saveperformance="off" data-title="Smart Look" data-description="">
+
+<img src="demos/spa/images/slider/2.jpg" style='background-color:#ffffff' alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="10" class="rev-slidebg" data-no-retina>
+
+
+<div class="tp-caption -  " id="slide-37-layer-3" data-x="['right','right','right','right']" data-hoffset="['40','40','40','40']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['40','40','40','40']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-style_hover="cursor:pointer;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;" data-start="500" data-splitin="none" data-splitout="none" data-actions='[{"event":"click","action":"jumptoslide","slide":"next","delay":""}]' data-basealign="slide" data-responsive_offset="off" data-responsive="off" style="z-index: 7; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgba(0, 0, 0, 1.00);padding:3px 8px 3px 8px;border-color:rgba(0, 0, 0, 1.00);border-style:solid;border-width:1px;border-radius:30px 30px 30px 30px;"><i class="icon-angle-down"></i>
+</div>
+
+<div class="tp-caption Fashion-BigDisplay   tp-resizeme" id="slide-37-layer-5" data-x="['center','center','center','center']" data-hoffset="['230','201','211','92']" data-y="['middle','middle','middle','middle']" data-voffset="['-30','-18','-18','-18']" data-fontsize="['80','50','50','56']" data-lineheight="['100','50','50','50']" data-width="['none','265','265','265']" data-height="['none','100','100','100']" data-whitespace="['nowrap','normal','normal','normal']" data-transform_idle="o:1;" data-transform_in="x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="x:[100%];s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500" data-splitin="none" data-splitout="none" data-basealign="slide" data-responsive_offset="on" style="z-index: 9; white-space: nowrap; color: #222;">Beauty Spa
+</div>
+
+<div class="tp-caption Fashion-TextBlock   tp-resizeme" id="slide-37-layer-6" data-x="['center','center','center','center']" data-hoffset="['209','190','200','69']" data-y="['middle','middle','middle','middle']" data-voffset="['120','130','100','90']" data-fontsize="['20','17','17','17']" data-lineheight="['40','30','30','30']" data-width="219" data-height="161" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="x:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="x:[-100%];s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500" data-splitin="none" data-splitout="none" data-basealign="slide" data-responsive_offset="on" style="z-index: 10; min-width: 219px; max-width: 219px; max-width: 161px; max-width: 161px; white-space: normal;color: #222;"><i class="icon-line-check"></i><br>
+<i class="icon-line-check"></i><br>
+<i class="icon-line-check"></i><br>
+<i class="icon-line-check"></i><br>
+</div>
+
+<div class="tp-caption Fashion-SmallText   tp-resizeme" id="slide-37-layer-7" data-x="['center','center','center','center']" data-hoffset="['115','100','109','-9']" data-y="['middle','middle','middle','middle']" data-voffset="['-85','-85','-85','-85']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500" data-splitin="none" data-splitout="none" data-basealign="slide" data-responsive_offset="on" style="z-index: 11; white-space: nowrap; color: rgba(0, 0, 0, 0.6);">WOMEN
+</div>
+
+<div class="tp-caption Fashion-TextBlock   tp-resizeme" id="slide-37-layer-8" data-x="['center','center','center','center']" data-hoffset="['244','224','240','110']" data-y="['middle','middle','middle','middle']" data-voffset="['120','130','99','90']" data-fontsize="['20','17','17','17']" data-lineheight="['40','30','30','30']" data-width="219" data-height="161" data-whitespace="normal" data-transform_idle="o:1;" data-transform_in="x:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="x:[100%];s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500" data-splitin="none" data-splitout="none" data-basealign="slide" data-responsive_offset="on" style="z-index: 12; min-width: 219px; max-width: 219px; max-width: 161px; max-width: 161px; white-space: normal; font-weight: 400; color: #222;">Manicure<br />
+Hair Cut<br />
+Head Wash<br />
+Fruit Bleach
+</div>
+</li>
+
+<li data-index="rs-38" class="dark" data-transition="slideoververtical" data-slotamount="7" data-easein="default" data-easeout="default" data-masterspeed="1500" data-thumb="" data-rotate="0" data-saveperformance="off" data-title="Slide" data-description="">
+
+<img src="demos/spa/images/videos/1.jpg" alt="" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+
+
+<div class="rs-background-video-layer" data-forcerewind="on" data-volume="mute" data-videowidth="100%" data-videoheight="100%" data-videomp4="demos/spa/images/videos/spa.webm" data-videopreload="preload" data-videoloop="true" data-forceCover="1" data-aspectratio="16:9" data-autoplay="true" data-autoplayonlyfirsttime="false" data-nextslideatend="true"></div>
+
+<div class="tp-caption -  " id="slide-38-layer-1" data-x="['left','left','left','left']" data-hoffset="['0','0','0','0']" data-y="['top','top','top','top']" data-voffset="['0','0','0','0']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="opacity:0;s:1500;e:Power2.easeOut;" data-transform_out="auto:auto;s:1500;e:Power2.easeOut;" data-start="500" data-splitin="none" data-splitout="none" data-basealign="slide" data-responsive_offset="off" data-responsive="off" style="z-index: 5; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgba(255, 255, 255, 1.00);"><div class="coverdark"></div>
+</div>
+
+<div class="tp-caption -  " id="slide-36-layer-3" data-x="['right','right','right','right']" data-hoffset="['40','40','40','40']" data-y="['bottom','bottom','bottom','bottom']" data-voffset="['40','40','40','40']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-style_hover="cursor:pointer;" data-transform_in="y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;s:1500;e:Power3.easeInOut;" data-transform_out="y:[100%];s:1000;e:Power3.easeInOut;s:1000;e:Power3.easeInOut;" data-mask_in="x:0px;y:0px;" data-mask_out="x:inherit;y:inherit;" data-start="500" data-splitin="none" data-splitout="none" data-actions='[{"event":"click","action":"jumptoslide","slide":"next","delay":""}]' data-basealign="slide" data-responsive_offset="off" data-responsive="off" style="z-index: 7; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: #FFF;padding:3px 8px 3px 8px;border-color:rgba(255,255,255, 1.00);border-style:solid;border-width:1px;border-radius:30px 30px 30px 30px;"><i class="icon-angle-down"></i>
+</div>
+
+<div class="tp-caption Fashion-BigDisplay   tp-resizeme" id="slide-38-layer-2" data-x="['left','center','center','center']" data-hoffset="['40','0','0','0']" data-y="['middle','middle','middle','middle']" data-voffset="['0','-50','-130','-130']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1500;e:Power2.easeInOut;s:1500;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="500" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 6; white-space: nowrap; line-height: 100px;">
+</div>
+
+<div class="tp-caption Fashion-BigDisplay   tp-resizeme" id="slide-38-layer-3" data-x="['left','middle','middle','center']" data-hoffset="['40','-100','-90','0']" data-y="['middle','middle','middle','middle']" data-voffset="['52','0','-90','-70']" data-width="none" data-fontweight="['400','400','400','900']" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1500;e:Power2.easeInOut;s:1500;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="750" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 7; white-space: nowrap; font-size: 16px;text-transform: uppercase; line-height: 22px; font-weight: 400; font-family: 'Lato';">
+</div>
+
+<div class="tp-caption Fashion-TextBlock   tp-resizeme" id="slide-38-layer-4" data-x="['right','center','center','center']" data-hoffset="['40','0','25','20']" data-y="['middle','middle','middle','middle']" data-voffset="['46','110','15','50']" data-fontsize="['20','20','20','17']" data-lineheight="['40','30','30','34']" data-fontweight="['400','300','300','400']" data-width="none" data-height="none" data-whitespace="nowrap" data-transform_idle="o:1;" data-transform_in="y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;s:2000;e:Power4.easeInOut;" data-transform_out="y:[100%];s:1500;e:Power2.easeInOut;s:1500;e:Power2.easeInOut;" data-mask_in="x:0px;y:[100%];s:inherit;e:inherit;" data-mask_out="x:inherit;y:inherit;s:inherit;e:inherit;" data-start="1000" data-splitin="none" data-splitout="none" data-responsive_offset="on" style="z-index: 8; white-space: nowrap;"><i class="icon-map-marker" style="color:rgba(255,255,255,0.35);"></i>
+
+</div>
+</li>
+</ul>
+<div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+</div>
+</div>
+</section>
+
+<section id="content">
+<div class="content-wrap notoppadding">
+<div id="section-about" class="section page-section nomargin">
+<div class="container clearfix">
+<div class="row">
+<div class="col-lg-6">
+<div class="heading-block nobottomborder bottommargin-sm">
+<h3 class="cookie-font capitalize color">About Us</h3>
+</div>
+<p>After having operated as a massage therapist in prestigious spa, I have developed my own know-how through extensive research. I have come across traditional methods of beauty care, always in search of the authentic.I recently decided to make my dream come true.
+
+A reserve nature in peaceful harmony with the outside world provides serenity and encourages personal exploration, before releasing you to greet the world anew.
+
+Hydra Spa ensures that guests enjoy the ultimate in relaxation and rejuvenation of the mind, body and soul. Our oasis includes five private rooms with a special spa suite for couples where you can enjoy a private relaxation area and an outdoor bath. Other pleasures of the spa include a room with shower and bath to experience traditional rituals, a vichy showers dedicated to scrubs and wraps, a hammam with essential oils, indoor and outdoor relaxation areas, private dressing rooms with lockers and showers, a private indoor garden where you can enjoy a fresh fruit infusion.
+
+I have chosen what is best in the world of rituals in search of the authentic to offer a wide variety of "treatments" which expresses the essence of the time- honored asian approach to healing. The menu I propose is in itself a reflection in all my rich experiences.
+
+Hydra's embraces holistic approach to physical and spiritual vitality. Inspired by traditional healing philosophies "coziness" lifestyle which believe in making each moments of one's life precious, treasuring every moment everyday. The treatments are based upon the principles of restoring balance and harmony to the body and mind.
+
+Prepared fresh each day, our ingredients draw on the natural benefits of native plants and herbs from our garden. These gifts from mother earth and enhanced by nurturing touch of experience therapists. They propose customised solutions with "coziness" advanced sience to experience pleasant emotions and witness extraordinary results.
+
+As you journey through the inner sanctums, your feeling of well being will linger after your farewell.... This blending of culture and product is what makes Hydra such a unique retreat.
+
+<br>Treasure every moment, everyday.</p>
+</div>
+<div class="col-lg-6">
+<img class="bottommargin-lg divcenter img-fluid" src="demos/spa/images/others/1.png" alt="">
+</div>
+
+
+<div class="col-lg-4 bottommargin">
+<div class="feature-box fbox-plain" data-animate="fadeIn">
+<div class="fbox-icon">
+<a href="#"><i class="spa-towel"></i></a>
+</div>
+<h3>Shower Services</h3>
+</div>
+</div>
+<div class="col-lg-4 bottommargin">
+<div class="feature-box fbox-plain" data-animate="fadeIn" data-delay="200">
+<div class="fbox-icon">
+<a href="#"><i class="spa-sandals"></i></a>
+</div>
+<h3>Foot Treatments</h3>
+</div>
+</div>
+<div class="col-lg-4 bottommargin">
+<div class="feature-box fbox-plain" data-animate="fadeIn" data-delay="800">
+<div class="fbox-icon">
+<a href="#"><i class="spa-cup-flower"></i></a>
+</div>
+<h3>Internal Beautification</h3>
+</div>
+</div>
+<div class="w-100 clear"></div>
+<div class="col-lg-4 bottommargin">
+<div class="feature-box fbox-plain" data-animate="fadeIn" data-delay="1000">
+<div class="fbox-icon">
+<a href="#"><i class="spa-meditation"></i></a>
+</div>
+<h3>Yoga &amp; Meditation</h3>
+</div>
+</div>
+<div class="col-lg-4 bottommargin">
+<div class="feature-box fbox-plain" data-animate="fadeIn" data-delay="1000">
+<div class="fbox-icon">
+<a href="#"><i class="spa-comb"></i></a>
+</div>
+<h3>Hair Dressing</h3>
+</div>
+</div>
+<div class="col-lg-4 bottommargin">
+<div class="feature-box fbox-plain" data-animate="fadeIn" data-delay="1000">
+<div class="fbox-icon">
+<a href="#"><i class="spa-flowers-feet"></i></a>
+</div>
+<h3>Herbal Pedicure</h3>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="section nomargin clearfix" style="background: #FFF url('demos/spa/images/others/2.jpg') no-repeat top left;">
+<div class="container clearfix">
+<div class="row">
+<div class="col-lg-7 offset-lg-5">
+<div class="heading-block noborder bottommargin-sm">
+<h3>Beautiful Service.</h3>
+</div>
+
+<div class="col_one_third center topmargin-sm">
+<i class="spa-leaves i-plain i-large divcenter nobottommargin" style="color: #D2D2D2;"></i>
+<div class="counter ls1 t600" style="color: #777; margin-top: 10px;"><span data-from="10" data-to="21" data-refresh-interval="50" data-speed="2000"></span></div>
+<h5>Spa Branches</h5>
+</div>
+<div class="col_one_third center topmargin-sm">
+<i class="spa-woman i-plain i-large divcenter nobottommargin" style="color: #D2D2D2;"></i>
+<div class="counter ls1 t600" style="color: #777; margin-top: 10px;"><span data-from="100" data-to="8514" data-refresh-interval="50" data-speed="2500"></span></div>
+<h5>Employees</h5>
+</div>
+<div class="col_one_third col_last center topmargin-sm">
+<i class="spa-meditation i-plain i-large divcenter nobottommargin" style="color: #D2D2D2;"></i>
+<div class="counter ls1 t600" style="color: #777; margin-top: 10px;"><span data-from="100" data-to="458" data-refresh-interval="50" data-speed="3500"></span></div>
+<h5>Happy Clients</h5>
+</div>
+</div>
+<div class="clear"></div>
+<div class="row">
+<div class="col-md-4 bottommargin-sm center">
+<div class="feature-box media-box">
+<div class="fbox-media" style="padding: 0 40px;">
+<a href="#"><img class="rounded-circle img-thumbnail" src="demos/spa/images/services/1.jpg" alt="Why choose Us?"></a>
+</div>
+<div class="fbox-desc">
+<h3>Beauty.<span class="subtitle cookie-font">Your Property in Good Hands.</span></h3>
+
+</div>
+
+</div>
+</div>
+<div class="col-md-4 bottommargin-sm center">
+<div class="feature-box media-box">
+<div class="fbox-media" style="padding: 0 40px;">
+<a href="#"><img class="rounded-circle img-thumbnail" src="demos/spa/images/services/2.jpg" alt="Effective Planning"></a>
+</div>
+<div class="fbox-desc">
+<h3>Spa.<span class="subtitle cookie-font">Construction Process Organized.</span></h3>
+
+</div>
+
+</div>
+</div>
+<div class="col-md-4 bottommargin-sm center">
+<div class="feature-box media-box">
+<div class="fbox-media" style="padding: 0 40px;">
+<a href="#"><img class="rounded-circle img-thumbnail" src="demos/spa/images/services/3.jpg" alt="Why choose Us?"></a>
+</div>
+<div class="fbox-desc">
+ <h3>Relax.<span class="subtitle cookie-font">We have got you Covered.</span></h3>
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="video-wrap d-block d-lg-none d-xl-none">
+<div class="video-overlay" style="background: rgba(255,255,255,0.9);"></div>
+</div>
+</div>
+<a href="#" class="button button-full center">
+<div class="container clearfix">
+Book your visit online and save upto 25% Discount
+</div>
+</a>
+<div id="section-price" class="section nomargin page-section nobg">
+<div class="container clearfix">
+<div class="heading-block center bottommargin">
+<h3 class="cookie-font capitalize color">Our Price</h3>
+
+</div>
+<div class="tabs tabs-responsive clearfix" id="tab-1" data-accordion-style="accordion accordion-bg">
+<ul class="tab-nav center tab-nav2 bottommargin clearfix">
+<li><a href="#tabs-1">Spa Therapy</a></li>
+<li><a href="#tabs-2">Beauty Facial</a></li>
+<li><a href="#tabs-3">Body Wrap</a></li>
+<li><a href="#tabs-4">Body Scrubs</a></li>
+</ul>
+
+<div class="tab-container">
+<div class="tab-content clearfix" id="tabs-1">
+<div class="row">
+
+<div class="col-lg-6 service-wrap">
+<div class="service-header">
+<div class="service-name">
+<a href="#">Swedish Massage</a>
+</div>
+<div class="service-dots">
+<span class="separator-dots"></span>
+</div>
+<div class="service-price color">$39</div>
+</div>
+
+</div>
+<div class="col-lg-6 service-wrap">
+<div class="service-header">
+<div class="service-name">
+<a href="#">Full Body Massage</a>
+</div>
+<div class="service-dots">
+<span class="separator-dots"></span>
+</div>
+<div class="service-price color">$42</div>
+</div>
+
+</div>
+<div class="w-100"></div>
+<div class="col-lg-6 service-wrap nobottommargin">
+<div class="service-header">
+<div class="service-name">
+<a href="#">Foot Massage</a>
+</div>
+<div class="service-dots">
+<span class="separator-dots"></span>
+</div>
+<div class="service-price color">$29</div>
+</div>
+
+</div>
+<div class="col-lg-6 service-wrap nobottommargin">
+<div class="service-header">
+<div class="service-name">
+<a href="#">Choclate Massage</a>
+</div>
+<div class="service-dots">
+<span class="separator-dots"></span>
+</div>
+<div class="service-price color">$17</div>
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="tab-content clearfix" id="tabs-2">
+<div class="row">
+<div class="col-lg-6 service-wrap">
+ <div class="service-header">
+<div class="service-name">
+<a href="#">Signature Facial</a>
+</div>
+<div class="service-dots">
+<span class="separator-dots"></span>
+</div>
+<div class="service-price color">$22</div>
+</div>
+
+</div>
+<div class="col-lg-6 service-wrap">
+<div class="service-header">
+<div class="service-name">
+<a href="#">Organic Facial</a>
+</div>
+<div class="service-dots">
+<span class="separator-dots"></span>
+</div>
+<div class="service-price color">$40</div>
+</div>
+
+</div>
+<div class="w-100"></div>
+<div class="col-lg-6 service-wrap nobottommargin">
+<div class="service-header">
+<div class="service-name">
+<a href="#">Deep Cleansing Facial</a>
+</div>
+<div class="service-dots">
+<span class="separator-dots"></span>
+</div>
+<div class="service-price color">$31</div>
+</div>
+
+</div>
+<div class="col-lg-6 service-wrap nobottommargin">
+<div class="service-header">
+<div class="service-name">
+<a href="#">Anti Aging Facial</a>
+</div>
+<div class="service-dots">
+<span class="separator-dots"></span>
+</div>
+<div class="service-price color">$19</div>
+</div>
+
+</div>
+</div>
+</div>
+<div class="tab-content clearfix" id="tabs-3">
+<div class="row">
+<div class="col-lg-6 service-wrap">
+<div class="service-header">
+<div class="service-name">
+<a href="#">Papaya Wrap</a>
+</div>
+<div class="service-dots">
+<span class="separator-dots"></span>
+</div>
+<div class="service-price color">$51</div>
+</div>
+
+</div>
+<div class="col-lg-6 service-wrap">
+<div class="service-header">
+<div class="service-name">
+<a href="#">Cucumber Wrap</a>
+</div>
+<div class="service-dots">
+<span class="separator-dots"></span>
+</div>
+<div class="service-price color">$29</div>
+</div>
+
+</div>
+<div class="w-100"></div>
+<div class="col-lg-6 service-wrap nobottommargin">
+<div class="service-header">
+<div class="service-name">
+<a href="#">Whitening Wrap</a>
+</div>
+<div class="service-dots">
+<span class="separator-dots"></span>
+</div>
+<div class="service-price color">$39</div>
+</div>
+
+</div>
+<div class="col-lg-6 service-wrap nobottommargin">
+<div class="service-header">
+<div class="service-name">
+ <a href="#">Signature Wrap</a>
+</div>
+<div class="service-dots">
+<span class="separator-dots"></span>
+</div>
+<div class="service-price color">$20</div>
+</div>
+
+</div>
+</div>
+</div>
+<div class="tab-content clearfix" id="tabs-4">
+<div class="row">
+<div class="col-lg-6 service-wrap">
+<div class="service-header">
+<div class="service-name">
+<a href="#">Menicure</a>
+</div>
+<div class="service-dots">
+<span class="separator-dots"></span>
+</div>
+<div class="service-price color">$39</div>
+</div>
+
+</div>
+<div class="col-lg-6 service-wrap">
+<div class="service-header">
+<div class="service-name">
+<a href="#">Pedicure</a>
+</div>
+<div class="service-dots">
+<span class="separator-dots"></span>
+</div>
+<div class="service-price color">$42</div>
+</div>
+
+</div>
+<div class="w-100"></div>
+<div class="col-lg-6 service-wrap nobottommargin">
+<div class="service-header">
+<div class="service-name">
+<a href="#">Rice Body Scrub</a>
+</div>
+<div class="service-dots">
+<span class="separator-dots"></span>
+</div>
+<div class="service-price color">$29</div>
+</div>
+
+</div>
+<div class="col-lg-6 service-wrap nobottommargin">
+<div class="service-header">
+<div class="service-name">
+<a href="#">Corn Cub Scrub</a>
+</div>
+<div class="service-dots">
+<span class="separator-dots"></span>
+</div>
+<div class="service-price color">$17</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="center"><img class="img-responsive" src="demos/spa/images/others/bg-tab.jpg" alt=""></div>
+</div>
+</div>
+<section id="section-testimonials" class="section parallax nobottommargin page-section dark" style="background-image: url('demos/spa/images/others/bg-testimonials.jpg'); padding: 140px 0; background-size: cover" data-bottom-top="background-position:0px 300px;" data-top-bottom="background-position:0px -300px;">
+<div class="container clearfix">
+<div class="row">
+<div class="col-lg-6">
+</div>
+</div>
+</div>
+</section>
+<section id="section-contact" class="section nomargin nobottompadding nobg page-section">
+<div class="row clearfix">
+<div class="col-md-5 offset-md-1 col-10 col-offset-1">
+<div class="heading-block nobottomborder bottommargin-sm">
+<h3 class="cookie-font capitalize color">Reserve Now</h3>
+</div>
+<div class="contact-widget">
+<div class="contact-form-result"></div>
+<form class="nobottommargin" id="template-contactform" name="template-contactform" action="http://themes.semicolonweb.com/html/canvas/include/sendemail.php" method="post">
+<div class="form-process"></div>
+<div class="col_half">
+<label for="template-contactform-name">Name <small>*</small></label>
+<input type="text" id="template-contactform-name" name="template-contactform-name" value="" class="sm-form-control required" />
+</div>
+<div class="col_half col_last">
+<label for="template-contactform-phone">Phone</label>
+<input type="text" id="template-contactform-phone" name="template-contactform-phone" value="" class="sm-form-control" />
+</div>
+<div class="clear"></div>
+<div class="col_full">
+<label for="template-contactform-email">Email <small>*</small></label>
+<input type="email" id="template-contactform-email" name="template-contactform-email" value="" class="required email sm-form-control" />
+</div>
+<div class="clear"></div>
+<div class="col_full">
+<label for="template-contactform-message">Message <small>*</small></label>
+<textarea class="required sm-form-control" id="template-contactform-message" name="template-contactform-message" rows="6" cols="30"></textarea>
+</div>
+<div class="col_full hidden">
+<input type="text" id="template-contactform-botcheck" name="template-contactform-botcheck" value="" class="sm-form-control" />
+</div>
+<div class="col_full nobottommargin">
+<button class="button button-3d nomargin" type="submit" id="template-contactform-submit" name="template-contactform-submit" value="submit">Send Message</button>
+</div>
+</form>
+</div>
+</div>
+<div class="col-md-6">
+<img class="topmargin" src="demos/spa/images/others/3.jpg" alt="">
+</div>
+</div>
+</section>
+</div>
+</section>
+
+<footer id="footer" class="noborder" style="background-color: #F5F5F5;">
+
+<div id="copyrights" class="nobg">
+<div class="container clearfix">
+<div class="row">
+<div class="col-lg-3">
+<div class="widget clearfix">
+<div>
+</div>
+</div>
+</div>
+<div class="col-lg-3">
+<div class="widget clearfix">
+<div>
+<h5>Contact:</h5>
+<address class="nobottommargin">
+<abbr title="Phone Number"><strong>Phone:</strong></abbr> +(230) 57600791<br>
+
+</address>
+</div>
+</div>
+</div>
+<div class="col-lg-6 tright">
+<div class="fright topmargin-sm clearfix">
+<a href="#" class="social-icon si-small si-colored si-facebook">
+<i class="icon-facebook"></i>
+<i class="icon-facebook"></i>
+</a>
+<a href="#" class="social-icon si-small si-colored si-twitter">
+<i class="icon-twitter"></i>
+<i class="icon-twitter"></i>
+</a>
+<a href="#" class="social-icon si-small si-colored si-gplus">
+<i class="icon-gplus"></i>
+<i class="icon-gplus"></i>
+</a>
+</div>
+<div class="clear"></div>
+<a target="_blank" href="https://www.templateshub.net">Templates Hub</a>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</div>
+
+<div id="gotoTop" class="icon-angle-up"></div>
+
+<script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/jquery.js"></script>
+<script src="js/plugins.js"></script>
+
+<script src="js/functions.js"></script>
+
+<script src="include/rs-plugin/js/jquery.themepunch.tools.min.js"></script>
+<script src="include/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<script src="include/rs-plugin/js/extensions/revolution.extension.video.min.js"></script>
+<script src="include/rs-plugin/js/extensions/revolution.extension.slideanims.min.js"></script>
+<script src="include/rs-plugin/js/extensions/revolution.extension.actions.min.js"></script>
+<script src="include/rs-plugin/js/extensions/revolution.extension.layeranimation.min.js"></script>
+<script src="include/rs-plugin/js/extensions/revolution.extension.navigation.min.js"></script>
+<script>
+		var tpj=jQuery;
+
+		var revapi10;
+		tpj(document).ready(function() {
+			if(tpj("#rev_slider_10_1").revolution == undefined){
+				revslider_showDoubleJqueryError("#rev_slider_10_1");
+			}else{
+				revapi10 = tpj("#rev_slider_10_1").show().revolution({
+					sliderType:"standard",
+					jsFileLocation:"include/rs-plugin/js/",
+					sliderLayout:"fullscreen",
+					dottedOverlay:"none",
+					delay:9000,
+					navigation: {
+						keyboardNavigation:"on",
+						keyboard_direction: "horizontal",
+						mouseScrollNavigation:"off",
+						onHoverStop:"off",
+						touch:{
+							touchenabled:"on",
+							swipe_threshold: 75,
+							swipe_min_touches: 1,
+							swipe_direction: "vertical",
+							drag_block_vertical: false
+						}
+						,
+						bullets: {
+							enable:true,
+							hide_onmobile:false,
+							style:"uranus",
+							hide_onleave:false,
+							direction:"vertical",
+							h_align:"left",
+							v_align:"center",
+							h_offset:30,
+							v_offset:0,
+							space:8,
+							tmp:'<span class="tp-bullet-inner"></span>'
+						},
+						touch:{
+							touchenabled:"off",
+							swipe_treshold : 75,
+							swipe_min_touches : 1,
+							drag_block_vertical:false,
+							swipe_direction:"horizontal"
+						}
+					},
+					responsiveLevels:[1240,1024,778,480],
+					gridwidth:[1140,1024,778,480],
+					gridheight:[800,700,960,720],
+					lazyType:"none",
+					shadow:0,
+					spinner:"off",
+					stopLoop:"on",
+					shuffle:"off",
+					autoHeight:"off",
+					fullScreenAlignForce:"off",
+					fullScreenOffsetContainer: "",
+					fullScreenOffset: "",
+					hideThumbsOnMobile:"off",
+					hideSliderAtLimit:0,
+					hideCaptionAtLimit:0,
+					hideAllCaptionAtLilmit:0,
+					debugMode:false,
+					fallbacks: {
+						simplifyAll:"off",
+						nextSlideOnWindowFocus:"off",
+						disableFocusListener:false,
+					}
+				});
+			}
+
+			revapi10.bind("revolution.slide.onloaded",function (e) {
+				setTimeout( function(){ SEMICOLON.slider.sliderParallaxDimensions(); }, 200 );
+			});
+
+			revapi10.bind("revolution.slide.onchange",function (e,data) {
+				SEMICOLON.slider.revolutionSliderMenu();
+			});
+
+		});	/*ready*/
+
+	</script>
+</body>
+
+
 </html>
